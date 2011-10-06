@@ -91,6 +91,14 @@ if $0 == __FILE__
   end
   opts.on_tail("-h", "--help", "Show this usage statement.") do |h|
     STDOUT.puts opts
+    STDOUT.puts <<-HEREDOC
+    
+    To run Rails as a load-balanced mongrel cluster:
+    $ mongrel_rails cluster::configure -e development -p 3010 -N 4
+    $ mongrel_rails cluster::start
+    $ script/seesaw.rb -p 3000 -d 3010 -n 4
+    
+    HEREDOC
     exit
   end
   
