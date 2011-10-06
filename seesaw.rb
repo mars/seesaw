@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby -wKU
 #
 #  seesaw.rb
-#  Seesaw, a simple shell-friendly load balancer
+#  Seesaw, a simple shell-friendly HTTP reverse proxy / load balancer
+#
+#  https://github.com/mars/seesaw
 #
 #  Created by Mars on 2010-08-20.
 #  Copyright (c) 2010 Mars Hall. All rights reserved.
